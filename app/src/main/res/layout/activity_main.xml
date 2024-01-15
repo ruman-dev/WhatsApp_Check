@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/whatsapp_banner" />
+
+    <LinearLayout
+        android:id="@+id/CheckingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bannerImage"
+        android:layout_marginTop="35dp"
+        android:weightSum="4"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NumberLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="25dp"
+            android:paddingEnd="8dp"
+            android:hint="Paste WhatsApp Number"
+            android:maxEms="15"
+            android:minEms="12"
+            app:boxStrokeColor="#2BB741"
+            app:helperText="Paste with County Code"
+            app:helperTextTextColor="#2BB741"
+            app:placeholderTextColor="#2BB741"
+            android:layout_weight="3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/whatsappInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2BB741"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/paste_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#626262"
+            android:text="Paste"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#2BB741"
+        android:text="Check Now"
+        android:layout_below="@id/CheckingLayout"
+        android:textSize="22sp" />
+</RelativeLayout>
