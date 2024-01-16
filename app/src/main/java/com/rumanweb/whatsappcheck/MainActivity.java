@@ -56,9 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if (!validNumber.isEmpty()) {
-                    if(validNumber.startsWith("+880")){
-                    }
-                    else {
+                    if (validNumber.startsWith("01")) {
                         validNumber = "+880" + validNumber;
                     }
                     checkWhatsAppNumber(validNumber);

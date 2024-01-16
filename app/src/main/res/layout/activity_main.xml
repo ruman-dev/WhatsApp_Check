@@ -43,7 +43,7 @@
                 android:id="@+id/whatsappInput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#2BB741"
+                android:textColor="#565555"
                 android:inputType="number"
                 />
         </com.google.android.material.textfield.TextInputLayout>
